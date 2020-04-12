@@ -1,0 +1,9 @@
+import java.util.Map;
+import java.util.TreeMap;
+
+public class TreeProm {
+  public static void main(String[] args) {
+	Map< Integer, String> cource=new TreeMap<Integer, String>();
+	
+}
+}

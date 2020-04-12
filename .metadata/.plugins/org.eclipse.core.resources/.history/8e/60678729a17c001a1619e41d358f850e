@@ -1,0 +1,11 @@
+package com.goomo;
+
+interface Lambda{
+	  public 
+}
+
+public class Application {
+	public static void main(String[] args) {
+
+	}
+}

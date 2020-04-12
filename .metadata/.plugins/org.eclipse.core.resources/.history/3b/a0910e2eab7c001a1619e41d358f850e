@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+class Data {
+	private String name;
+
+	public Data(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Data [name=" + name + "]";
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}
+
+public class lambda_Demo1 {
+	public static void main(String[] args) {
+		List<Data> list = new ArrayList<Data>();
+		list.add(new Data("Pankaj"));
+		list.add(new Data("Tarun"));
+		list.add(new Data("Tamil"));
+		list.add(new Data("Priyanka"));
+		list.add(new Data("Radha"));
+		list.add(new Data("Sheela"));
+		list.add(new Data("Leela"));
+		
+		Collections.sort( list, (Data data1, Data data2)-> data1.getName().compareTo(data2.getName()));
+		
+		
+		/*
+		 * Collections.sort(list, new Comparator<Data>() {
+		 * 
+		 * @Override public int compare(Data data1, Data data2) { return
+		 * data1.getName().compareTo(data2.getName()); } });
+		 */		for (Data data : list) {
+			System.out.println(data);
+		}
+	}
+}

@@ -1,0 +1,11 @@
+
+public interface Iuser {
+	boolean Login(String username, String pasword);
+
+	boolean Register(String username, String password, String email);
+
+	void LogError(String error);
+
+	boolean SendEmail(String email);
+
+}

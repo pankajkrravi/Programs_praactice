@@ -1,0 +1,51 @@
+import java.util.Map;
+import java.util.TreeMap;
+
+class Code {
+	private String selectionNo;
+	private String courceName;
+
+	public Code(String selectionNo, String courceName) {
+		this.selectionNo = selectionNo;
+		this.courceName = courceName;
+	}
+
+	@Override
+	public String toString() {
+		return "Code [selectionNo=" + selectionNo + ", courceName=" + courceName + "]";
+	}
+
+	public String getSelectionNo() {
+		return selectionNo;
+	}
+
+	public void setSelectionNo(String selectionNo) {
+		this.selectionNo = selectionNo;
+	}
+
+	public String getCourceName() {
+		return courceName;
+	}
+
+	public void setCourceName(String courceName) {
+		this.courceName = courceName;
+	}
+}
+
+public class TreeProm {
+	public static void main(String[] args) {
+		Map<Integer, String> cource = new TreeMap<Integer, String>();
+		/*
+		 * cource.put(2, "Java"); cource.put(3, "Python"); cource.put(7, "Java script");
+		 * cource.put(10, "AJAX"); cource.put(01, "JQuery");
+		 */
+		cource.put(new Code("SOO1", "LAC1"), "Java");
+		cource.put(3, "Python");
+		cource.put(7, "Java script");
+		cource.put(10, "AJAX");
+		cource.put(01, "JQuery");
+		for (Map.Entry<Integer, String> entry : cource.entrySet()) {
+			System.out.println("Key : " + entry.getKey() + " value : " + entry.getValue());
+		}
+	}
+}

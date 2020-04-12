@@ -1,0 +1,22 @@
+package com.goomo.app;
+
+import java.util.List;
+
+class Data {
+	public <E> void printlistdata(List<E> list) {
+		for (E e : list) {
+			System.out.println(e);
+		}
+	}
+
+	public <E> void printArrayData(E[] array) {
+		for (E e : array) {
+			System.out.println(e);
+		}
+	}
+
+public class App {
+	public static void main(String[] args) {
+
+	}
+}

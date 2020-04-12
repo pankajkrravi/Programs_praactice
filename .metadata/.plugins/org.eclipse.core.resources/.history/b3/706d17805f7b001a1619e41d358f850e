@@ -1,0 +1,6 @@
+
+public class Counter {
+	String name=null;
+	int value=0;
+
+}

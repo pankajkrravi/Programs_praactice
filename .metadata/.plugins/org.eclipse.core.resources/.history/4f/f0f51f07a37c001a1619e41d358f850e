@@ -1,0 +1,19 @@
+package com.goomo;
+
+
+interface lamdaCls {
+	public void demo();
+}
+
+public class LamdaApp {
+	public static void main(String[] args) {
+		lamdaCls lambda = new lamdaCls() {
+
+			@Override
+			public void demo() {
+             System.out.println("Statement 1 ");
+			}
+		};
+		lambda.demo();
+	}
+}

@@ -1,0 +1,24 @@
+import java.util.Deque;
+import java.util.Queue;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.LinkedBlockingQueue;
+
+public class DqueueDemo {
+	public static void main(String[] args) {
+		Deque<Integer> dequeue = new LinkedBlockingDeque<Integer>();
+		dequeue.add(2);
+		dequeue.add(22);
+		dequeue.add(23);
+		dequeue.add(21);
+		dequeue.add(45);
+		dequeue.add(4);
+		dequeue.add(20);
+		for (Integer integer : dequeue) {
+			System.out.println(integer);
+		}
+		System.out.println();
+	System.out.println("=============================");
+		dequeue.addFirst(0);
+		
+	}
+}

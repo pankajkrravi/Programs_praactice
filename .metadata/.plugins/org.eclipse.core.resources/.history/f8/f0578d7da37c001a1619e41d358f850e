@@ -1,0 +1,15 @@
+package com.goomo;
+
+
+interface lamdaCls {
+	public void demo();
+}
+
+public class LamdaApp {
+	public static void main(String[] args) {
+		lamdaCls lambda = ()->{
+			
+		}
+		lambda.demo();
+	}
+}

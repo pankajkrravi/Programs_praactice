@@ -1,0 +1,13 @@
+
+public class Counter {
+	String name = null;
+	int value = 0;
+
+	public Counter(String name) {
+		this.name = name;
+	}
+
+	public coin increment() {
+		value++;
+	}
+}

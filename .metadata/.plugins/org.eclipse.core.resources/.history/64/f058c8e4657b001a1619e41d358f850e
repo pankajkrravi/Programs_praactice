@@ -1,0 +1,17 @@
+
+public class StackDS {
+	private int maxSize;
+	private long[] stackArray;
+	private int top;
+
+	public StackDS(int size) {
+		this.maxSize = size;
+		this.stackArray = new long[maxSize];
+		this.top=-1;
+	}
+	
+	public void push(long value)
+	{
+		top++''
+	}
+}

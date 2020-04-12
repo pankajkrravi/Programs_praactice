@@ -1,0 +1,36 @@
+package com.goomo.app;
+
+class Data<T> implements Comparable<T>{
+	private T myVariable;
+
+	public T getMyVariable() {
+		return myVariable;
+	}
+
+	@Override
+	public String toString() {
+		return "Data [myVariable=" + myVariable + "]";
+	}
+
+	public void setMyVariable(T myVariable) {
+		this.myVariable = myVariable;
+	}
+
+	public Data(T myVariable) {
+		this.myVariable = myVariable;
+	}
+
+	@Override
+	public int compareTo(T o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
+
+public class App {
+
+	public static void main(String[] args) {
+
+	}
+
+}

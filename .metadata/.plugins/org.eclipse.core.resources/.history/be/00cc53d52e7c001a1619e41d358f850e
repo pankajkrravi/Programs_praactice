@@ -1,0 +1,19 @@
+import java.util.Map;
+import java.util.TreeMap;
+clas Code
+{
+	
+}
+public class TreeProm {
+	public static void main(String[] args) {
+		Map<Integer, String> cource = new TreeMap<Integer, String>();
+		cource.put(2, "Java");
+		cource.put(3, "Python");
+		cource.put(7, "Java script");
+		cource.put(10, "AJAX");
+		cource.put(01, "JQuery");
+		for (Map.Entry<Integer, String> entry : cource.entrySet()) {
+                System.out.println("Key : "+entry.getKey()+" value : "+entry.getValue());
+		}
+	}
+}

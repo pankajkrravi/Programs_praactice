@@ -1,0 +1,4 @@
+
+public class CannonMG2470 implements  ISPDemoTask{
+
+}

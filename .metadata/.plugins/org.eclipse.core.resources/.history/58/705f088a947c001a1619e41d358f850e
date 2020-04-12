@@ -1,0 +1,77 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+class Names {
+	String name;
+
+	@Override
+	public String toString() {
+		return "names [name=" + name + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		names other = (names) obj;
+		if (name == null) {
+			if (other.name != null)
+				return false;
+		} else if (!name.equals(other.name))
+			return false;
+		return true;
+	}
+
+	public names(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+}
+
+public class Sets_Algo {
+	public static void main(String[] args) {
+
+		Set<String> set = new HashSet<String>();
+		set.add("Pankaj");
+		set.add("Ravi");
+		set.add("jatan");
+		set.add("Rahul");
+		set.add("Shreya");
+		set.add("Madhu");
+		set.add("Sankar");
+		set.add("Pankaj");// Duplicate is eleminated
+		/*
+		 * for(String data: set) { System.out.println(data); }
+		 */
+
+		List<String> list = new ArrayList<String>();
+		list.addAll(set);
+		Collections.sort(list);
+		for (String data : list) {
+			System.out.println(data);
+		}
+		System.out.println(Collections.binarySearch(list, "Pankaj"));
+	}
+}

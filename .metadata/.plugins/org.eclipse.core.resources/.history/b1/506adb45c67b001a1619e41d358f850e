@@ -1,0 +1,6 @@
+
+public class mainRunner {
+   Employee employeePankaj=new Employee(1, "Pankaj", "Pernament");
+   Employee employeetest=new Employee(1, "Pankaj", "Pernament");
+   
+}

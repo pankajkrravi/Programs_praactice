@@ -1,0 +1,9 @@
+package com.goomo.child;
+
+public class Class1 {
+       public int a=10;
+        public void demo()
+        {
+        	System.out.println("Value of a is  "+a);
+        }
+}

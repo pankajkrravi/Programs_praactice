@@ -1,0 +1,14 @@
+
+class Data<K,V>
+{
+	
+}
+
+
+public class Application {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

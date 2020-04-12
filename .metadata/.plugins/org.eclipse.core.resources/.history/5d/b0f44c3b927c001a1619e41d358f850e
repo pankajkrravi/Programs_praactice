@@ -1,0 +1,17 @@
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class Sets_Algo {
+  public static void main(String[] args) {
+	  
+	  Set<String>  set =new HashSet<String>();
+	  set.add("Pankaj");
+	  set.add("Ravi");
+	  set.add("jatan");
+	  set.add("Rahul");
+	  set.add("Shreya");
+	  set.add("Madhu");
+	  set.add("Pankaj");
+  }
+}

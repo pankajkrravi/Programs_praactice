@@ -1,0 +1,41 @@
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+class Data<K, V> {
+	private K key;
+	private V value;
+
+	public Data(K key, V value) {
+		this.key = key;
+		this.value = value;
+	}
+
+	public K getKey() {
+		return key;
+	}
+
+	@Override
+	public String toString() {
+		return "Data [key=" + key + ", value=" + value + "]";
+	}
+
+	public V getValue() {
+		return value;
+	}
+
+}
+
+public class Application {
+
+	public static void main(String[] args) {
+		Set<Data> set = new LinkedHashSet<Data>();
+
+		set.add(new Data("key", "value"));
+		set.add(new Data(1, "One"));
+		set.add(new Data(2, "Two"));
+		set.add(new Data(3, "Three"));
+		set.add(new Data("key", "value"));
+
+	}
+
+}

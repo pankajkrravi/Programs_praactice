@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+class Name {
+	String name;
+
+	public Name(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+}
+
+public class Sets_Algo {
+	public static void main(String[] args) {
+
+		Set<Name> names = new HashSet<Name>();
+		names.add(new Name("Pankaj"));
+		names.add(new Name("Ravi"));
+		names.add(new Name("jatan"));
+		names.add(new Name("Rahul"));
+		names.add(new Name("Shreya"));
+		names.add(new Name("Madhu"));
+		names.add(new Name("Sankar"));
+		names.add(new Name("Pankaj"));
+
+		/*
+		 * Set<String> set = new HashSet<String>(); set.add("Pankaj"); set.add("Ravi");
+		 * set.add("jatan"); set.add("Rahul"); set.add("Shreya"); set.add("Madhu");
+		 * set.add("Sankar"); set.add("Pankaj");// Duplicate is eleminated
+		 * 
+		 * for(String data: set) { System.out.println(data); }
+		 * 
+		 * 
+		 * List<String> list = new ArrayList<String>(); list.addAll(set);
+		 * Collections.sort(list); for (String data : list) { System.out.println(data);
+		 * }
+		 */
+		 List<Name> list=new ArrayList<Name>();
+		
+		//System.out.println(Collections.binarySearch(list, "Pankaj"));
+	}
+}

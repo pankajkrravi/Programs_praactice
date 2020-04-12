@@ -1,0 +1,17 @@
+package com.goomo.app;
+
+class Data<T> {
+	private T myVariable;
+
+	public Data(T myVariable) {
+		this.myVariable = myVariable;
+	}
+}
+
+public class App {
+
+	public static void main(String[] args) {
+
+	}
+
+}

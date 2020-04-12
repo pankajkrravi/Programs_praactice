@@ -1,0 +1,6 @@
+
+public class mainStackClass {
+     public static void main(String[] args) {
+		 StackDS stack=new StackDS(10);
+	}
+}

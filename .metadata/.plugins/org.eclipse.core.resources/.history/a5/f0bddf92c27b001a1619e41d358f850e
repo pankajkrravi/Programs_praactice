@@ -1,0 +1,8 @@
+
+public interface ISPDemoTask {
+	boolean PrintContent(String content);
+
+	boolean ScanContent(String content);
+
+	boolean FaxContent(String content);
+}

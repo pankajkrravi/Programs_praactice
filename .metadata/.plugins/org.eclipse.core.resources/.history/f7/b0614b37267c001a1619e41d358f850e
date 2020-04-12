@@ -1,0 +1,19 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapProj {
+	public static void main(String[] args) {
+		Map<Integer, String> map = new HashMap<Integer, String>();
+		map.put(1, "Pankaj kumar");
+		map.put(3, "Neeraj kumar");
+		map.put(2, "mohan kumar");
+		map.put(10, "Rohan kumar");
+		map.put(6, "Jatan veer");
+		map.put(7, "komal");
+		map.put(9, "Kajal");
+		for (Map.Entry<Integer, String> entry : map.entrySet()) {
+			System.out.println("Key : "+entry.getKey()+" value : "+entry.getValue());
+
+		}
+	}
+}

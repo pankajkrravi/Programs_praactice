@@ -1,0 +1,5 @@
+
+public interface Iuser {
+   bool Login(String username,String pasword);
+   
+}

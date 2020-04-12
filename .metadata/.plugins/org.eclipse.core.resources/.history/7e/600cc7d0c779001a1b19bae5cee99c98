@@ -1,0 +1,13 @@
+package com.goomo.app;
+
+
+public class Data
+{
+	
+}
+
+public class App {
+	public static void main(String[] args) {
+
+	}
+}

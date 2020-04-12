@@ -1,0 +1,61 @@
+import java.util.Map;
+import java.util.TreeMap;
+
+class Code implements Comparable<Code> {
+	private String selectionNo;
+	private String courceName;
+
+	public Code(String selectionNo, String courceName) {
+		this.selectionNo = selectionNo;
+		this.courceName = courceName;
+	}
+
+	@Override
+	public String toString() {
+		return "Code [selectionNo=" + selectionNo + ", courceName=" + courceName + "]";
+	}
+
+	public String getSelectionNo() {
+		return selectionNo;
+	}
+
+	public void setSelectionNo(String selectionNo) {
+		this.selectionNo = selectionNo;
+	}
+
+	public String getCourceName() {
+		return courceName;
+	}
+
+	public void setCourceName(String courceName) {
+		this.courceName = courceName;
+	}
+
+	@Override
+	public int compareTo(Code o) {
+		String codde1 = selectionNo.concat(courceName);
+		String code2 = o.getSelectionNo() + o.getCourceName();
+		
+	}
+
+}
+
+public class TreeProm {
+	public static void main(String[] args) {
+		Map<Code, String> cource = new TreeMap<>();
+		/*
+		 * Map<Integer, String> cource = new TreeMap<Integer, String>(); cource.put(2,
+		 * "Java"); cource.put(3, "Python"); cource.put(7, "Java script");
+		 * cource.put(10, "AJAX"); cource.put(01, "JQuery");
+		 */
+		cource.put(new Code("SOO1", "LAC1"), "Java");
+		cource.put(new Code("SOO3", "LAC3"), "Python");
+		cource.put(new Code("SOO5", "LAC5"), "Java script");
+		cource.put(new Code("SOO9", "LAC9"), "AJAX");
+		cource.put(new Code("SOO10", "LAC10"), "JQuery");
+		cource.put(new Code("SOO1", "LAC1"), "SQL");
+		for (Map.Entry<Code, String> entry : cource.entrySet()) {
+			System.out.println("Key : " + entry.getKey() + " value : " + entry.getValue());
+		}
+	}
+}

@@ -1,0 +1,12 @@
+
+public interface ISPDemoConsole {
+	boolean PrintContent(String content);
+
+	boolean ScanContent(String content);
+
+	boolean PhotoCopyContent(String content);
+}
+
+public interface faxContent {
+	
+} 

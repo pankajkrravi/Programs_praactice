@@ -1,0 +1,8 @@
+
+public class MainClass {
+	public static void main(String[] args) {
+		 Counter mycounter= new Counter("My counter"); 
+		 mycounter.increment();
+	}
+
+}

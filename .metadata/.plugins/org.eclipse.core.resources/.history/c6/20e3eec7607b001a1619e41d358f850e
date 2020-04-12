@@ -1,0 +1,13 @@
+//Note ABT- Abstract data type  
+
+public class MainClass {
+	public static void main(String[] args) {
+		Counter mycounter = new Counter("My counter");
+		mycounter.increment();
+		mycounter.increment();
+		mycounter.increment();
+		mycounter.increment();
+		System.out.println(mycounter.getCurrentValue());
+	}
+
+}

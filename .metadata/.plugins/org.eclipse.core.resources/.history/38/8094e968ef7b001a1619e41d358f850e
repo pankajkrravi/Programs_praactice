@@ -1,0 +1,14 @@
+
+class Vehicle {
+	private int id;
+
+	public Vehicle(int id) {
+		super();
+		this.id = id;
+	}
+
+}
+
+public class App {
+
+}

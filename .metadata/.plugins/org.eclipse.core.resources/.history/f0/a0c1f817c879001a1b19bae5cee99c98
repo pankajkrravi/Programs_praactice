@@ -1,0 +1,14 @@
+package com.goomo.app;
+
+
+ class Data{
+	 public void printlistdata()
+	 {
+	
+}
+
+public class App {
+	public static void main(String[] args) {
+
+	}
+}

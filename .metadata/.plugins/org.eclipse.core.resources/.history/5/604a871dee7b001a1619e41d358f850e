@@ -1,0 +1,30 @@
+package com.goomo.app;
+
+class Data<T> implements Comparable<T>{
+	private T myVariable;
+
+	public T getMyVariable() {
+		return myVariable;
+	}
+
+	@Override
+	public String toString() {
+		return "Data [myVariable=" + myVariable + "]";
+	}
+
+	public void setMyVariable(T myVariable) {
+		this.myVariable = myVariable;
+	}
+
+	public Data(T myVariable) {
+		this.myVariable = myVariable;
+	}
+}
+
+public class App {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.goomo.LemdaApp.java&apos; to &apos;LamdaApp.java&apos;&#x0A;- Original project: &apos;Lambda_expression&apos;&#x0A;- Original element: &apos;com.goomo.LemdaApp.java&apos;&#x0A;- Renamed element: &apos;com.goomo.LamdaApp.java&apos;" description="Rename compilation unit &apos;LemdaApp.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.goomo{LemdaApp.java" name="LamdaApp.java" references="false" stamp="1586684948895" version="1.0"/>
+</session>

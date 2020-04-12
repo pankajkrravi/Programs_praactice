@@ -1,0 +1,14 @@
+import java.util.Queue;
+import java.util.concurrent.LinkedBlockingQueue;
+
+public class QueueClass {
+	public static void main(String[] args) {
+		Queue<Integer> queue = new LinkedBlockingQueue<Integer>();
+		queue.add(6);
+		queue.add(5);
+		queue.add(8);
+		queue.add(20);
+		queue.add(11);
+		queue.add(1);
+	}
+}

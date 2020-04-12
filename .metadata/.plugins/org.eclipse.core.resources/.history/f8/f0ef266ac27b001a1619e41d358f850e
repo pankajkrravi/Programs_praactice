@@ -1,0 +1,5 @@
+
+public interface ISPDemoTask {
+   boolean PrintContent(String content);
+   
+}

@@ -1,0 +1,7 @@
+import java.util.function.IntPredicate;
+
+public class Predicate_lambda {
+  public static void main(String[] args) {
+	  IntPredicate intPredicate = i->i<18;
+}
+}

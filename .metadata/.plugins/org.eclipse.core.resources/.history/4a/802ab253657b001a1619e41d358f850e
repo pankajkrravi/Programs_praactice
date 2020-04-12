@@ -1,0 +1,8 @@
+
+public class StackDS {
+	private int maxSize;
+    private long [] stackArray;
+    private int top;
+    public StackDS() {
+	}
+}

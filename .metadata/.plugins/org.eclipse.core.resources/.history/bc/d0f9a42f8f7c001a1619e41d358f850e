@@ -1,0 +1,9 @@
+import java.util.Map;
+import java.util.TreeMap;
+
+public class SearchAlgo {
+   public static void main(String[] args) {
+	
+	   Map<Code, String>  lacture=new TreeMap<>(;)
+ }
+}

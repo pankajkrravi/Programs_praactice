@@ -1,0 +1,10 @@
+import java.util.function.IntPredicate;
+
+public class Predicate_lambda {
+	public static void main(String[] args) {
+		IntPredicate leaathan18 = i -> i < 18;
+		IntPredicate morethan10 = i -> i < 18;
+		System.out.println(leaathan18.test(22));
+		System.out.println(morethan10.test(12));
+	}
+}

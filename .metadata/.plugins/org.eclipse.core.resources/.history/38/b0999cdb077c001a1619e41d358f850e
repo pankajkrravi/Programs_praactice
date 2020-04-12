@@ -1,0 +1,68 @@
+import java.util.Comparator;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+class Data<K, V> {
+	private K key;
+	private V value;
+
+	public Data(K key, V value) {
+		this.key = key;
+		this.value = value;
+	}
+
+	public K getKey() {
+		return key;
+	}
+
+	@Override
+	public String toString() {
+		return "Data [key=" + key + ", value=" + value + "]";
+	}
+
+	public V getValue() {
+		return value;
+	}
+
+}
+
+public class Application {
+
+	public static void main(String[] args) {
+		Comparator<Data<Integer,String>> COMPARE_kEY=new Comparator<Data<Integer,String>>() {
+
+			@Override
+			public int compare(Data<Integer, String> obj1, Data<Integer, String> obj2) {
+				// TODO Auto-generated method stub
+				  if(obj1.getKey()<obj2.getKey())
+				return 0;
+			}
+		};
+		Set<Data<Integer,String>> set = new TreeSet<>();
+
+		
+		set.add(new Data<Integer,String>(1, "One"));
+		set.add(new Data<Integer,String>(2, "Two"));
+		set.add(new Data<Integer,String>(3, "Three"));
+		 set.add(new Data<Integer,String>(8, "Eight"));
+		set.add(new Data<Integer,String>(4, "Four"));
+
+		  for (Data<Integer,String> data : set) {
+			  System.out.println(data);
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
